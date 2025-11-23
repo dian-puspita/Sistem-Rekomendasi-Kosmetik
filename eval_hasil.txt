@@ -1,0 +1,26 @@
+=== Evaluasi Global Top-20 ===
+Precision@20: 0.7500
+Recall@20: 0.7500
+NDCG@20: 0.8623
+Top-20 Ground Truth (rating+popularity): ['ultra eye shadow', 'ultra lip gloss', 'divine bronzer', 'divine blush', 'super eye shadow', 'magic blush', 'magic contour', 'ultra cc cream', 'divine concealer', 'magic foundation', 'magic lipstick', 'super serum', 'divine eyeliner', 'magic lipstick', 'divine makeup remover', 'ultra cleanser', 'perfect exfoliator', 'super face mask', 'divine setting spray', 'perfect serum']
+Top-20 Rekomendasi Hybrid: ['ultra lip gloss', 'ultra eye shadow', 'magic blush', 'divine blush', 'ultra cc cream', 'divine bronzer', 'magic foundation', 'magic lipstick', 'super eye shadow', 'super serum', 'magic lipstick', 'perfect blush', 'ultra cleanser', 'divine eyeliner', 'perfect exfoliator', 'magic contour', 'divine cc cream', 'super face mask', 'ultra highlighter', 'perfect highlighter']
+
+=== DEBUG FILTER USER ===
+Input Filter -> Skin: oily, Gender: female, Usage: weekly, Price Range: (0, np.float64(2249850.0))
+
+=== DEBUG FILTER USER ===
+Input Filter -> Skin: dry, Gender: female, Usage: daily, Price Range: (0, np.float64(2249850.0))
+
+=== DEBUG FILTER USER ===
+Input Filter -> Skin: None, Gender: None, Usage: None, Price Range: (0, np.float64(2249850.0)) 
+
+=== DEBUG FILTER USER ===
+Input Filter -> Skin: combination, Gender: male, Usage: monthly, Price Range: (0, np.float64(2249850.0))
+
+=== DEBUG FILTER USER ===
+Input Filter -> Skin: None, Gender: None, Usage: None, Price Range: (0, np.float64(2249850.0)) 
+
+=== Average Metrics Across Multiple Filters ===
+Precision@10: 0.8667
+Recall@10: 0.8667
+NDCG@10: 0.9104
