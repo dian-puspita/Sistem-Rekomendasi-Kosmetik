@@ -1,5 +1,4 @@
 streamlit==1.26.0
-pandas==2.1.0
-pillow>=7.1.0,<10
-numpy
-scikit-learn
+pandas==2.0.3          # versi stabil untuk Python 3.13
+pillow==9.5.0           # kompatibel dengan Streamlit 1.26
+numpy==1.25.2           # sesuai pandas
