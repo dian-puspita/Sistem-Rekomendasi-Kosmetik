@@ -1,4 +1,16 @@
+# Streamlit framework
 streamlit==1.26.0
-pandas==2.0.3          # versi stabil untuk Python 3.13
-pillow==9.5.0           # kompatibel dengan Streamlit 1.26
-numpy==1.25.2           # sesuai pandas
+
+# Data processing
+pandas==2.0.3
+numpy>=1.26.0
+
+# Text parsing / Markdown
+markdown-it-py>=4.0.0
+mdurl>=0.1.2
+pygments>=2.19.2
+rich>=14.2.0
+
+# Optional: HTTP requests / images if needed
+requests>=2.31.0
+Pillow>=10.0.0
