@@ -139,6 +139,7 @@ skin_type_select = st.sidebar.selectbox("Skin Type", skin_types)
 gender_select = st.sidebar.selectbox("Gender", genders)
 usage_select = st.sidebar.selectbox("Usage Frequency", usage_freqs)
 
+# nilai MIN dan MAX dari kolom Price_IDR
 price_min = float(df['Price_IDR'].min()) if len(df) > 0 else 0.0
 price_max = float(df['Price_IDR'].max()) if len(df) > 0 else 0.0
 
