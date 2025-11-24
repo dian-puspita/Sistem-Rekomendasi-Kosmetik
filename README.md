@@ -80,19 +80,37 @@ Sistem dievaluasi menggunakan:
 * Recall@K
 * NDCG@K
 
+## Top-20
+
 Evaluasi dilakukan pada **K = 20**, dan hasilnya sebagai berikut:
 
 | Metrik       | Nilai  |
 | ------------ | ------ |
-| Precision@20 | 0.75   |
-| Recall@20    | 0.75   |
-| NDCG@20      | 0.8623 |
+| Precision@20 | 0.750  |
+| Recall@20    | 0.750  |
+| NDCG@20      | 0.862  |
 
 Dari hasil ini dapat disimpulkan bahwa:
 
-* Model mampu memberikan rekomendasi yang relevan dengan tingkat presisi 75%.
-* Recall 75% menunjukkan bahwa sebagian besar item relevan berhasil direkomendasikan.
-* Nilai NDCG yang tinggi (0.8623) menandakan bahwa sistem tidak hanya memberikan item yang benar, namun juga menempatkannya dalam urutan yang tepat.
+* Model mampu memberikan rekomendasi yang relevan dengan tingkat presisi **75%**.  
+* Recall **75%** menunjukkan bahwa sebagian besar item relevan berhasil direkomendasikan pada Top-20.  
+* Nilai NDCG yang tinggi (**0,862**) menandakan bahwa sistem tidak hanya memberikan item yang benar, tetapi juga menempatkannya dalam urutan yang tepat.
+
+## Top-10
+
+Evaluasi dilakukan pada **K = 10**, dan hasilnya sebagai berikut:
+
+| Metrik       | Nilai  |
+| ------------ | ------ |
+| Precision@10 | 0.867  |
+| Recall@10    | 0.867  |
+| NDCG@10      | 0.910  |
+
+Dari hasil ini dapat disimpulkan bahwa:
+
+* Model mampu memberikan rekomendasi yang relevan dengan tingkat presisi **86,7%**.  
+* Recall **86,7%** menunjukkan bahwa sebagian besar item relevan berhasil direkomendasikan pada Top-10.  
+* Nilai NDCG yang tinggi (**0,910**) menandakan bahwa sistem tidak hanya memberikan item yang benar, tetapi juga menempatkannya dalam urutan yang tepat, sehingga urutan rekomendasi lebih optimal.
 
 ---
 
