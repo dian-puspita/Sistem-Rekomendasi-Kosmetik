@@ -147,7 +147,6 @@ Termasuk:
 | Gender            | Target pengguna     |
 | Price_IDR         | Harga Rupiah        |
 | combined_features | Gabungan fitur teks |
-| Image_URL         | URL gambar          |
 
 ⚠ Dataset ini **100% tidak berasal dari data asli**, hanya untuk penelitian dan pembelajaran.
 
