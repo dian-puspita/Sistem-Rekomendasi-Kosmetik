@@ -11,20 +11,14 @@ import gdown
 
 st.set_page_config(page_title="Cosmetics Recommendation", layout="wide")
 
-# ====== Load dataset ======
-# Google Drive file ID
-file_id = "1K4RfC8z95r7WTYLuxxyjBsh527TlC_TU"
-output = "data/skincare_products_clean.csv"
+CSV_FILE = "skincare_products_clean.csv"
+FILE_ID = "1K4RfC8z95r7WTYLuxxyjBsh527TlC_TU"  # contoh ID file
+URL = f"https://drive.google.com/uc?id={FILE_ID}"
 
-# Buat folder 'data' jika belum ada
-os.makedirs("data", exist_ok=True)
+if not os.path.exists(CSV_FILE):
+    gdown.download(URL, CSV_FILE, quiet=False)
 
-# Download hanya jika file belum ada
-if not os.path.exists(output):
-    gdown.download(f"https://drive.google.com/uc?id={file_id}", output, quiet=False)
-
-# Load CSV
-df = pd.read_csv(output)
+df = pd.read_csv(CSV_FILE)
 
 # --- Normalisasi teks ---
 for col in ['Category', 'Skin_Type', 'Gender', 'Usage_Frequency', 'Product_Name', 'Brand', 'Ingredients']:
