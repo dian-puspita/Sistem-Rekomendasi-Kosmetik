@@ -6,12 +6,25 @@ from modules.recommendation import hybrid_topk
 from sklearn.feature_extraction.text import TfidfVectorizer
 from scipy.sparse import csr_matrix
 from PIL import Image
+import os
+import gdown
 
-st.set_page_config(page_title="Skincare Recommendation", layout="wide")
+st.set_page_config(page_title="Cosmetics Recommendation", layout="wide")
 
 # ====== Load dataset ======
-CSV_PATH = "data/skincare_products_clean.csv"
-df = pd.read_csv(CSV_PATH)
+# Google Drive file ID
+file_id = "1K4RfC8z95r7WTYLuxxyjBsh527TlC_TU"
+output = "data/skincare_products_clean.csv"
+
+# Buat folder 'data' jika belum ada
+os.makedirs("data", exist_ok=True)
+
+# Download hanya jika file belum ada
+if not os.path.exists(output):
+    gdown.download(f"https://drive.google.com/uc?id={file_id}", output, quiet=False)
+
+# Load CSV
+df = pd.read_csv(output)
 
 # --- Normalisasi teks ---
 for col in ['Category', 'Skin_Type', 'Gender', 'Usage_Frequency', 'Product_Name', 'Brand', 'Ingredients']:
