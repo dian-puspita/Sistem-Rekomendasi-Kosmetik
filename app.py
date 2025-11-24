@@ -6,19 +6,12 @@ from modules.recommendation import hybrid_topk
 from sklearn.feature_extraction.text import TfidfVectorizer
 from scipy.sparse import csr_matrix
 from PIL import Image
-import os
-import gdown
 
-st.set_page_config(page_title="Cosmetics Recommendation", layout="wide")
+st.set_page_config(page_title="Skincare Recommendation", layout="wide")
 
-CSV_FILE = "skincare_products_clean.csv"
-FILE_ID = "1K4RfC8z95r7WTYLuxxyjBsh527TlC_TU"  # contoh ID file
-URL = f"https://drive.google.com/uc?id={FILE_ID}"
-
-if not os.path.exists(CSV_FILE):
-    gdown.download(URL, CSV_FILE, quiet=False)
-
-df = pd.read_csv(CSV_FILE)
+# ====== Load dataset ======
+CSV_PATH = "data/skincare_products_clean.csv"
+df = pd.read_csv(CSV_PATH)
 
 # --- Normalisasi teks ---
 for col in ['Category', 'Skin_Type', 'Gender', 'Usage_Frequency', 'Product_Name', 'Brand', 'Ingredients']:
@@ -146,7 +139,6 @@ skin_type_select = st.sidebar.selectbox("Skin Type", skin_types)
 gender_select = st.sidebar.selectbox("Gender", genders)
 usage_select = st.sidebar.selectbox("Usage Frequency", usage_freqs)
 
-# nilai MIN dan MAX dari kolom Price_IDR
 price_min = float(df['Price_IDR'].min()) if len(df) > 0 else 0.0
 price_max = float(df['Price_IDR'].max()) if len(df) > 0 else 0.0
 
