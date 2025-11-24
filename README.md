@@ -1,4 +1,4 @@
-# 💄 Skincare Recommendation System
+# 🏆 Skincare Recommendation System
 
 *Project Tugas Besar – Kecerdasan Buatan*
 
