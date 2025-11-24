@@ -221,18 +221,6 @@ streamlit run app.py
 
 ---
 
-# 🌐 Link Deploy Streamlit
-
-Jika sudah dideploy ke Streamlit Cloud, link akan berbentuk:
-
-```
-https://<username>-skincare-recommender.streamlit.app
-```
-
-Tambahkan link setelah aplikasi online.
-
----
-
 # 📄 Lisensi
 
 Proyek ini dibuat untuk keperluan akademik dan bebas dimodifikasi selama mencantumkan kredit.
