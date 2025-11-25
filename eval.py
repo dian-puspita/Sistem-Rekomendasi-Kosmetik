@@ -1,4 +1,3 @@
-# eval_recommendation.py
 import pandas as pd
 import numpy as np
 from modules.recommendation import hybrid_topk
@@ -38,7 +37,6 @@ def evaluate_hybrid_topk(df, tfidf_matrix, alpha=0.4, beta=0.2, gamma=0.4, k=10,
 
     return precision, recall, ndcg, topk_ground_truth, topk_recom
 
-# ===== Contoh penggunaan =====
 if __name__ == "__main__":
     # Load dataset
     df = pd.read_csv("data/skincare_products_clean.csv")
