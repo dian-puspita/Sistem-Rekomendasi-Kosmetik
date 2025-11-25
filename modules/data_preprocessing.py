@@ -53,10 +53,10 @@ def preprocess_and_save(csv_input, csv_output):
 
     # Buat fitur gabungan
     df['combined_features'] = (
-        df['Category'].fillna('') + ' ' +
-        df['Skin_Type'].fillna('') + ' ' +
-        df['Usage_Frequency'].fillna('') + ' ' +
-        df['Ingredients'].fillna('')
+        df['Category'].fillna('').astype(str) + ' ' +
+        df['Skin_Type'].fillna('').astype(str) + ' ' +
+        df['Usage_Frequency'].fillna('').astype(str) + ' ' +
+        df['Ingredients'].fillna('').astype(str)
     )
 
     # Kolom kosong untuk URL gambar
