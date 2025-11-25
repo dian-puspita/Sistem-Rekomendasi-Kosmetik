@@ -2,6 +2,26 @@
 from PIL import Image, ImageDraw, ImageFont
 import os
 
+"""
+    Generate dummy image untuk produk yang tidak memiliki gambar asli.
+
+    Proses:
+    - Mengecek apakah folder penyimpanan gambar sudah ada
+    - Membuat nama file aman berdasarkan nama produk
+    - Jika file belum ada, sistem membuat gambar baru
+    - Gambar menggunakan background gradasi sederhana
+    - Nama produk ditampilkan pada gambar (maks. 15 karakter)
+    - Gambar disimpan pada direktori target dan mengembalikan path file
+
+    Parameter:
+    - product_name : nama produk
+    - image_dir    : folder penyimpanan hasil gambar
+    - size         : ukuran gambar (default 200x200)
+
+    Output:
+    - Mengembalikan path file gambar yang dihasilkan
+"""
+
 def generate_dummy_image(product_name, image_dir='data/images', size=(200, 200)):
 
     if not os.path.exists(image_dir):
