@@ -2,7 +2,7 @@
 
 *Project Tugas Besar – Kecerdasan Buatan*
 
-# 📌 Deskripsi Proyek
+# Deskripsi Proyek
 
 Sistem ini adalah **Aplikasi Rekomendasi Produk Skincare** berbasis **Hybrid Recommendation System**, yang menggabungkan:
 
@@ -30,7 +30,7 @@ Aplikasi dibangun menggunakan:
 
 ---
 
-# 🎯 Tujuan Proyek
+# Tujuan Proyek
 
 1. Membangun sistem rekomendasi kosmetik berbasis data.
 2. Mengimplementasikan pendekatan Content-Based Filtering & Hybrid.
@@ -39,7 +39,7 @@ Aplikasi dibangun menggunakan:
 
 ---
 
-# 🧠 Pendekatan AI yang Digunakan
+# Pendekatan AI yang Digunakan
 
 ## 1️⃣ Content-Based Filtering
 
@@ -114,7 +114,7 @@ Dari hasil ini dapat disimpulkan bahwa:
 
 ---
 
-# 📁 Tentang Dataset
+# Tentang Dataset
 
 Dataset ini adalah **data sintetis (simulated)** mengenai produk kecantikan di seluruh dunia, digunakan untuk:
 
@@ -123,7 +123,7 @@ Dataset ini adalah **data sintetis (simulated)** mengenai produk kecantikan di s
 * Sistem rekomendasi
 * Pembelajaran machine learning
 
-### 🧴 Kategori Produk
+### Kategori Produk
 
 Termasuk:
 
@@ -133,7 +133,7 @@ Termasuk:
 * Fragrance
 * Personal Care
 
-### 📊 Kolom Dataset Utama
+### Kolom Dataset Utama
 
 | Kolom             | Deskripsi           |
 | ----------------- | ------------------- |
@@ -152,7 +152,7 @@ Termasuk:
 
 ---
 
-# 📂 Struktur Project
+# Struktur Project
 
 ```
 .
@@ -173,7 +173,7 @@ Termasuk:
 
 ---
 
-# 🧹 Data Preprocessing
+# Data Preprocessing
 
 Preprocessing mencakup:
 
@@ -187,7 +187,7 @@ Preprocessing mencakup:
 
 ---
 
-# 🚀 Cara Menjalankan Aplikasi
+# Cara Menjalankan Aplikasi
 
 ## 1️⃣ Install dependency
 
@@ -221,6 +221,6 @@ streamlit run app.py
 
 ---
 
-# 📄 Lisensi
+# Lisensi
 
 Proyek ini dibuat untuk keperluan akademik dan bebas dimodifikasi selama mencantumkan kredit.
