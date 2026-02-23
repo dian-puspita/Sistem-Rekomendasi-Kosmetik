@@ -4,7 +4,7 @@
 
 # Deskripsi Proyek
 
-Sistem ini adalah **Aplikasi Rekomendasi Produk Skincare** berbasis **Hybrid Recommendation System**, yang menggabungkan:
+Sistem ini adalah **Aplikasi Rekomendasi Produk Kosmetik** berbasis **Hybrid Recommendation System**, yang menggabungkan:
 
 * **Content-Based Filtering** (TF-IDF + Cosine Similarity)
 * **Rating**
